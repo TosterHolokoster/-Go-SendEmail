@@ -30,7 +30,7 @@ func SendMail(w http.ResponseWriter, r *http.Request) {
 	name := r.PostFormValue("name")
 	email := r.PostFormValue("email")
 	mess := r.PostFormValue("message")
-	to := "arte.m98@mail.ru"
+	to := "alexnemchinov3541@gmail.com"
 	msg := "From: " + name + " <" + email + ">\n" +
 		"To: " + to + "\n" +
 		"Subject: It's Work!\n\n" +
