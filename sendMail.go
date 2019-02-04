@@ -19,6 +19,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "html/index.html")
 }
 
+//SendMail send email use SMTP
 func SendMail(w http.ResponseWriter, r *http.Request) {
 	type Anser struct {
 		Result bool `json:result`
